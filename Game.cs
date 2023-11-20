@@ -7,9 +7,6 @@
         static int _consoleHeight;
         static char[,] _gameTiles;
         static bool _running;
-        static int _snakeLength;
-        static int _xVel;
-        static int _yVel;
         static Game()
         {
             _consoleWidth = Console.WindowWidth;
@@ -18,7 +15,6 @@
         }
         public static void Run(int difficulty)
         {
-            _snakeLength = 3;
             _difficulty = difficulty;
             _running = true;
             var rng = new Random();
